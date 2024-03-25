@@ -1,0 +1,26 @@
+.layoutContaner {
+  /* margin: 5px;
+  padding: 0 5px 5px 5px; */
+  height: 100vh;
+}
+
+.navbarContaner {
+  height: 10%;
+  position: sticky;
+  top: 0;
+  /* padding-top: 10px; */
+  z-index: 100;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.outletContaner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90%;
+
+}
