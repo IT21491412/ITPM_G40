@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend for CeyLex translate",
+  "description": "Backend for CeyLex translate",
   "main": "index.js",
   "scripts": {
     "test": "start",
