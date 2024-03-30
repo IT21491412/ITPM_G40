@@ -1,54 +1,66 @@
-  .translater-main{
+  .translater-main {
     width: 100vW;
     max-height: 100%;
   }
+
   .transcontainer {
-    display: flex; /* Make the container a flex container */
-    justify-content: center; /* Horizontal alignment: space between */
+    display: flex;
+    /* Make the container a flex container */
+    justify-content: center;
+    /* Horizontal alignment: space between */
   }
-  
+
   .transinputtext {
-    display: flex; /* Make the transinputtext divs flex containers */
+    display: flex;
+    /* Make the transinputtext divs flex containers */
     justify-content: center;
 
-    flex-direction: column; /* Vertical alignment: stack children vertically */
-    flex: 1; /* Distribute available space equally */
+    flex-direction: column;
+    /* Vertical alignment: stack children vertically */
+    flex: 1;
+    /* Distribute available space equally */
     border: 0px solid #ccc;
     border-radius: 4px;
     margin: 10px;
     max-width: 600px;
 
-   
+
   }
-  
+
   .transinputtextpart1 {
     /* Your styles for .transinputtextpart1 here */
     /* For example, you can set width, height, padding, etc. */
     border: 1px solid #04195d;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
     margin-bottom: 20px;
-    padding:10px;
+    padding: 10px;
     height: 50px;
-    position: relative; /* Add this to create a relative positioning context for child elements */
+    position: relative;
+    /* Add this to create a relative positioning context for child elements */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
-    
+
   }
 
-  .transinputtextpart1 select{
+  .transinputtextpart1 select {
     width: 68%;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 15px;
     outline: none;
     /* Increase the height */
-    height: 30px; /* Adjust the height value as needed */
+    height: 30px;
+    /* Adjust the height value as needed */
 
-    position: absolute; /* Position the text absolutely within the horizontal div */
-    top: 10px; /* Adjust the top position to move the text down from the top */
-    right: 20px; /* Adjust the left position to move the text in from the left */
-    
+    position: absolute;
+    /* Position the text absolutely within the horizontal div */
+    top: 10px;
+    /* Adjust the top position to move the text down from the top */
+    right: 20px;
+    /* Adjust the left position to move the text in from the left */
+
   }
 
   .transinputtextpart1.gg222 {
@@ -56,8 +68,10 @@
     /* For example, you can set width, height, padding, etc. */
     border: none;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    position: relative; /* Add this to create a relative positioning context for child elements */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+    position: relative;
+    /* Add this to create a relative positioning context for child elements */
     height: 250px;
 
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -65,39 +79,47 @@
   }
 
   .transinputtextpart1.gg222 textarea {
-   
+
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s ease-in-out;
-    position: absolute; /* Position the text absolutely within the horizontal div */
-    top: 0px; /* Adjust the top position to move the text down from the top */
-    right: 0px; 
+    position: absolute;
+    /* Position the text absolutely within the horizontal div */
+    top: 0px;
+    /* Adjust the top position to move the text down from the top */
+    right: 0px;
     width: 100%;
     height: 100%;
     padding: 5px;
 
-    
+
   }
-  
+
   /* Add focus styles for the input */
   .transinputtextpart1.gg222 textarea:focus {
-    border-color: #04195d; /* Change the border color on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+    border-color: #04195d;
+    /* Change the border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Add a subtle shadow on focus */
   }
-  
+
   /* Add styles for placeholder text */
   .transinputtextpart1.gg222 textarea::placeholder {
-    color: #999; /* Placeholder text color */
+    color: #999;
+    /* Placeholder text color */
   }
-  .transinputtextpart1.imagtotextpage{
+
+  .transinputtextpart1.imagtotextpage {
     border: solid 1px #ccc;
   }
 
+  /*
   .center-button {
     display: block;
-    margin: 0 auto; /* This will center the button horizontally */
+    margin: 0 auto;
+  
     padding: 10px 20px;
     background-color: #04195d;
     color: white;
@@ -110,269 +132,341 @@
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
   }
-  
+*/
+
+  .center-button {
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%,
+        #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .center-button:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+  }
+
+  @media (min-width: 768px) {
+    .center-button {
+      padding: 0 2.6rem;
+    }
+  }
+
+  /* end of the button */
+
   .center-button:hover {
     background-color: #0056b3;
   }
 
   .transbox {
-    
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+
+    margin: 0;
+    /* Remove default margins */
+    padding: 0;
+    /* Remove default padding */
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
     height: 100%;
   }
 
-.transbox.inputtext{
+  .transbox.inputtext {
     border: none;
-}
+  }
 
-/* Reset default table styles */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 1500px; /* Set a maximum width for the table */
-  margin: 0 auto; /* Center the table */
-  margin-bottom: 40px;
-}
+  /* Reset default table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1500px;
+    /* Set a maximum width for the table */
+    margin: 0 auto;
+    /* Center the table */
+    margin-bottom: 40px;
+  }
 
-/* Style the table header */
-thead {
-  background-color: #04195d;
-  color: white;
-}
+  /* Style the table header */
+  thead {
+    background-color: #04195d;
+    color: white;
+  }
 
-th {
-  padding: 10px;
-  text-align: center;
-  /* border: 1px solid #000000; /* Add a border to table cells */
-}
+  th {
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #000000; /* Add a border to table cells */
+  }
 
-td {
-  padding: 10px;
-  text-align: left;
-  /* border: 1px solid #000000; /* Add a border to table cells */
-}
+  td {
+    padding: 10px;
+    text-align: left;
+    /* border: 1px solid #000000; /* Add a border to table cells */
+  }
 
-/*--------------------*/
-
-
-/* Style the table rows */
-tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-/* Style the delete icon */
-.historydeleteicon {
-  cursor: pointer;
-  color: #04195d;
-  font-size: 25px;
-}
-.historyediticon{
-  cursor: pointer;
-  color: #04195d;
-  font-size: 25px;
-}
-
-/* Add some padding to the delete icon cell */
-td:last-child {
-  padding-left: 10px;
-}
-
-/* Center-align text in the date cell */
- td:nth-child(3) {
-  text-align: center;
-  width: 150px;
-
-}
-
-td:nth-child(4) {
-  text-align: center;
-  width: 50px;
-}
-td:nth-child(5) {
-  text-align: center;
-  width: 50px;
-}
+  /*--------------------*/
 
 
-/* Hover effect for table rows */
-tbody tr:hover {
-  background-color: #ddd;
+  /* Style the table rows */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
-}
+  /* Style the delete icon */
+  .historydeleteicon {
+    cursor: pointer;
+    color: #04195d;
+    font-size: 25px;
+  }
 
-.historydeleteicon:hover {
-  cursor: pointer;
-  color: #fb0505;
-}
-.historyediticon:hover{
-  cursor: pointer;
-  color: #16d426;
-}
+  .historyediticon {
+    cursor: pointer;
+    color: #04195d;
+    font-size: 25px;
+  }
 
+  /* Add some padding to the delete icon cell */
+  td:last-child {
+    padding-left: 10px;
+  }
 
-/*--------delete all button */
+  /* Center-align text in the date cell */
+  td:nth-child(3) {
+    text-align: center;
+    width: 150px;
 
-.upperbuttons{
-  float: right;
-  margin-right: 6%;
-  margin-bottom: 20px;
-}
+  }
 
-/* Style the "Delete All" button */
-.btn-ad-deleteall {
-  background-color: #ffffff; /* Button background color */
-  color: #fb0505; /* Text color */
-  border: solid 2px; /* Remove button border */
-  padding: 10px 20px; /* Add padding around the text */
-  font-size: 16px; /* Button text size */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 5px; /* Add rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
-  
-  width: 150px;
-  height: 50px;
-}
-.btn-ad-deleteall:hover {
-  background-color: #fb0505;
-  color: #ffffff;
-  transition: background-color 0.5s, color 0.3s;
-  border-color: #fb0505;
+  td:nth-child(4) {
+    text-align: center;
+    width: 50px;
+  }
 
-}
-
-.icon {
-  margin-right: 5px; /* Add some spacing between the icon and text */
-  font-size: 30px;
-}
-
-.btn-ad-downloadreport{
-  background-color: #ffffff; /* Button background color */
-  color: #04195d; /* Text color */
-  border: solid 2px; /* Remove button border */
-  padding: 10px 20px; /* Add padding around the text */
-  font-size: 16px; /* Button text size */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 5px; /* Add rounded corners */
-  height: 50px;
-  margin-right: 10px;
-
-}
-
-.btn-ad-downloadreport:hover{
-  background-color: #04195d; /* Button background color */
-  color: #ffffff; /* Text color */
-  transition: background-color 0.5s, color 0.3s;
-  border-color: #04195d;
-
-}
-
-.down_icon{
-  margin-left: 5px;
-}
+  td:nth-child(5) {
+    text-align: center;
+    width: 50px;
+  }
 
 
-.topictext{
-  margin-left: 5.5%;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
+  /* Hover effect for table rows */
+  tbody tr:hover {
+    background-color: #ddd;
 
-.translating{
-  cursor: not-allowed;
-}
+  }
 
-/* Animation class for when deleting */
-.chand_button-box{
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-.btn-ad-changebutton{
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  font-size: 30px;
-  padding: auto;
-  background-color: transparent;
-  cursor: pointer;
-}
-.translater-tlitle-text-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
+  .historydeleteicon:hover {
+    cursor: pointer;
+    color: #fb0505;
+  }
 
-.translater-tlitle-text{
-  font-size: 50px;
-  font-weight: bold;
-}
+  .historyediticon:hover {
+    cursor: pointer;
+    color: #16d426;
+  }
 
-/* Style for the container div */
-.filterbox {
-  margin-left: 6.2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
 
-/* Style for the date input */
-.historydatebox {
-  padding: 5px;
-  width: 250px;
-  text-align: center;
+  /*--------delete all button */
+
+  .upperbuttons {
+    float: right;
+    margin-right: 6%;
+    margin-bottom: 20px;
+  }
+
+  /* Style the "Delete All" button */
+  .btn-ad-deleteall {
+    background-color: #ffffff;
+    /* Button background color */
+    color: #fb0505;
+    /* Text color */
+    border: solid 2px;
+    /* Remove button border */
+    padding: 10px 20px;
+    /* Add padding around the text */
+    font-size: 16px;
+    /* Button text size */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition on hover */
+
+    width: 150px;
+    height: 50px;
+  }
+
+  .btn-ad-deleteall:hover {
+    background-color: #fb0505;
+    color: #ffffff;
+    transition: background-color 0.5s, color 0.3s;
+    border-color: #fb0505;
+
+  }
+
+  .icon {
+    margin-right: 5px;
+    /* Add some spacing between the icon and text */
+    font-size: 30px;
+  }
+
+  .btn-ad-downloadreport {
+    background-color: #ffffff;
+    /* Button background color */
+    color: #04195d;
+    /* Text color */
+    border: solid 2px;
+    /* Remove button border */
+    padding: 10px 20px;
+    /* Add padding around the text */
+    font-size: 16px;
+    /* Button text size */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    border-radius: 5px;
+    /* Add rounded corners */
+    height: 50px;
+    margin-right: 10px;
+
+  }
+
+  .btn-ad-downloadreport:hover {
+    background-color: #04195d;
+    /* Button background color */
+    color: #ffffff;
+    /* Text color */
+    transition: background-color 0.5s, color 0.3s;
+    border-color: #04195d;
+
+  }
+
+  .down_icon {
+    margin-left: 5px;
+  }
+
+
+  .topictext {
+    margin-left: 5.5%;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .translating {
+    cursor: not-allowed;
+  }
+
+  /* Animation class for when deleting */
+  .chand_button-box {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .btn-ad-changebutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    padding: auto;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .translater-tlitle-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .translater-tlitle-text {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  /* Style for the container div */
+  .filterbox {
+    margin-left: 6.2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  /* Style for the date input */
+  .historydatebox {
+    padding: 5px;
+    width: 250px;
+    text-align: center;
     border: 1px solid #04195d;
-  border-radius: 5px;
-  font-size: 16px;
-}
+    border-radius: 5px;
+    font-size: 16px;
+  }
 
-/* Style for the filter button */
-.historyfilterbutton {
-  background-color: #04195d; /* Button background color */
-  color: #ffffff; /* Text color */
-  border: solid 2px #04195d; /* Remove button border */
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 14px;
-}
+  /* Style for the filter button */
+  .historyfilterbutton {
+    background-color: #04195d;
+    /* Button background color */
+    color: #ffffff;
+    /* Text color */
+    border: solid 2px #04195d;
+    /* Remove button border */
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
 
-.historyfilterbutton:hover {
-  background-color: #ffffff;
-  color: #04195d;
-  transition: background-color 0.5s, color 0.3s;
-  border-color: #04195d;
-}
+  .historyfilterbutton:hover {
+    background-color: #ffffff;
+    color: #04195d;
+    transition: background-color 0.5s, color 0.3s;
+    border-color: #04195d;
+  }
 
-/* Style for the clear button */
-.historyclearbutton {
-  background-color: #ffffff; /* Button background color */
-  color: #fb0505; /* Text color */
-  border: solid 2px; /* Remove button border */
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 14px;
-}
+  /* Style for the clear button */
+  .historyclearbutton {
+    background-color: #ffffff;
+    /* Button background color */
+    color: #fb0505;
+    /* Text color */
+    border: solid 2px;
+    /* Remove button border */
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
 
-.historyclearbutton:hover {
-  background-color: #fb0505;
-  color: #ffffff;
-  transition: background-color 0.5s, color 0.3s;
-  border-color: #fb0505;
-}
+  .historyclearbutton:hover {
+    background-color: #fb0505;
+    color: #ffffff;
+    transition: background-color 0.5s, color 0.3s;
+    border-color: #fb0505;
+  }
 
-.headingrow{
-  display: flex;
-  justify-content: space-between; 
-}
+  .headingrow {
+    display: flex;
+    justify-content: space-between;
+  }
