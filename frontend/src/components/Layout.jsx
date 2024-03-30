@@ -14,19 +14,22 @@ const Layout = () => {
   return (
     <>
       <div className="layoutContaner">
-        <div className="navbarContaner">
-          {/* navbar */}
-
-          Nav bar eka hada ganna 😂😂
-          <a href="/history">History</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/home">Translator</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <button onClick={handleLogout}> Logout</button>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          {user && user.email}
-          {/* navbar */}
-        </div>
+        {/* navbar */}
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">CeyLex</label>
+          <ul>
+            <li><a class="active" href="/home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/history">History</a></li>
+            <li><button onClick={handleLogout}> Logout</button></li>
+            <li>{user && user.email}</li>
+          </ul>
+        </nav>
+        {/* navbar */}
         <div className="outletContaner">
           <Outlet />
         </div>

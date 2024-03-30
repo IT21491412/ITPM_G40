@@ -17,38 +17,38 @@ const TranslatorPage = () => {
   const { user } = useAuthContext();
 
   const handleTranslate = (e) => {
-    if(targetLang !== 0){
-    e.preventDefault();
-    setIsTranslating(true);
+    if (targetLang !== 0) {
+      e.preventDefault();
+      setIsTranslating(true);
 
-    fetch(baseURL + "/api/history/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
+      fetch(baseURL + "/api/history/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
 
-      },
-      body: JSON.stringify({
-        userenterdtext: inputText,
-        translatedtextlanguage: targetLang,
-        userid: user.userID,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setTranslatedText(data.translatedText);
-        setInputTextLanguage(data.userEnterdTextLanguage); // Update the translated text and language
-
-        console.log(data.translatedText); // Log the translated text
-        console.log(data.userEnterdTextLanguage); // Log the translated text
-
-        setIsTranslating(false);
+        },
+        body: JSON.stringify({
+          userenterdtext: inputText,
+          translatedtextlanguage: targetLang,
+          userid: user.userID,
+        }),
       })
-      .catch((error) => console.error("Translation error:", error));
+        .then((response) => response.json())
+        .then((data) => {
+          setTranslatedText(data.translatedText);
+          setInputTextLanguage(data.userEnterdTextLanguage); // Update the translated text and language
+
+          console.log(data.translatedText); // Log the translated text
+          console.log(data.userEnterdTextLanguage); // Log the translated text
+
+          setIsTranslating(false);
+        })
+        .catch((error) => console.error("Translation error:", error));
 
       setErrorMessage('');
     }
-    else{
+    else {
       setErrorMessage('Please select language before translate.');
     }
   };
@@ -67,7 +67,7 @@ const TranslatorPage = () => {
     <div className="translater-main">
       {isTranslating && <Spineer />}
       <div className="translater-tlitle-text-box">
-        <h1 className="translater-tlitle-text">🤪 MokakaHari Translater 🤪</h1>
+        <h1 className="translater-tlitle-text">CeyLex Translator</h1>
       </div>
 
       <div className="transcontainer">
@@ -115,7 +115,7 @@ const TranslatorPage = () => {
                 <option value="en">English</option>
               </select>
             </div>
-            
+
           </div>
 
           <div className="transinputtextpart1 gg222">
